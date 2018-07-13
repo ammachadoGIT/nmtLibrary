@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using nmtLibrary.Data;
 using System;
 
-namespace nmtLibrary.Data.Migrations
+namespace nmtLibrary.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

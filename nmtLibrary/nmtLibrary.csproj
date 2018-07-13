@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\nmtLibrary.Data\nmtLibrary.Data.csproj" />
     <ProjectReference Include="..\nmtLibrary.General\nmtLibrary.General.csproj" />
     <ProjectReference Include="..\nmtLibrary.Service\nmtLibrary.Service.csproj" />
   </ItemGroup>

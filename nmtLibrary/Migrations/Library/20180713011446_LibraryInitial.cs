@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace nmtLibrary.Migrations
+namespace nmtLibrary.Migrations.Library
 {
-    public partial class InitialLibrary : Migration
+    public partial class LibraryInitial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

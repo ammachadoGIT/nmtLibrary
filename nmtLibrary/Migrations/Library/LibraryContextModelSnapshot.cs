@@ -8,20 +8,19 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using nmtLibrary.Data;
 using System;
 
-namespace nmtLibrary.Migrations
+namespace nmtLibrary.Migrations.Library
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20180712150632_InitialLibrary")]
-    partial class InitialLibrary
+    partial class LibraryContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("nmtLibrary.Models.Book", b =>
+            modelBuilder.Entity("nmtLibrary.General.Models.Book", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -41,7 +40,7 @@ namespace nmtLibrary.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("nmtLibrary.Models.Writer", b =>
+            modelBuilder.Entity("nmtLibrary.General.Models.Writer", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -57,9 +56,9 @@ namespace nmtLibrary.Migrations
                     b.ToTable("Writers");
                 });
 
-            modelBuilder.Entity("nmtLibrary.Models.Book", b =>
+            modelBuilder.Entity("nmtLibrary.General.Models.Book", b =>
                 {
-                    b.HasOne("nmtLibrary.Models.Writer", "Writer")
+                    b.HasOne("nmtLibrary.General.Models.Writer", "Writer")
                         .WithMany()
                         .HasForeignKey("WriterID")
                         .OnDelete(DeleteBehavior.Cascade);

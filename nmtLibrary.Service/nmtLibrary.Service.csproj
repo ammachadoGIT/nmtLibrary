@@ -44,10 +44,6 @@
     <Compile Include="Services\WriterService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\nmtLibrary.Data\nmtLibrary.Data.csproj">
-      <Project>{f2bb9b88-bba4-43f1-b615-88b375d4ac6a}</Project>
-      <Name>nmtLibrary.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\nmtLibrary.General\nmtLibrary.General.csproj">
       <Project>{24984f53-2703-4a4f-8957-bc8d16c8a3e2}</Project>
       <Name>nmtLibrary.General</Name>

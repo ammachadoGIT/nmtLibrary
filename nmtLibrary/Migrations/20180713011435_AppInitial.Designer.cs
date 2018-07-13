@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using nmtLibrary.Data;
 using System;
 
-namespace nmtLibrary.Data.Migrations
+namespace nmtLibrary.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180712150603_Initial")]
-    partial class Initial
+    [Migration("20180713011435_AppInitial")]
+    partial class AppInitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

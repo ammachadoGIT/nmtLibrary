@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmtLibrary.Service", "nmtLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nmtLibrary.Test", "nmtLibrary.Test\nmtLibrary.Test.csproj", "{EA11AB6F-6925-42CA-80F4-36BCBF8820AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmtLibrary.Data", "nmtLibrary.Data\nmtLibrary.Data.csproj", "{F2BB9B88-BBA4-43F1-B615-88B375D4AC6A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{EA11AB6F-6925-42CA-80F4-36BCBF8820AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA11AB6F-6925-42CA-80F4-36BCBF8820AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA11AB6F-6925-42CA-80F4-36BCBF8820AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F2BB9B88-BBA4-43F1-B615-88B375D4AC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2BB9B88-BBA4-43F1-B615-88B375D4AC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2BB9B88-BBA4-43F1-B615-88B375D4AC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2BB9B88-BBA4-43F1-B615-88B375D4AC6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
