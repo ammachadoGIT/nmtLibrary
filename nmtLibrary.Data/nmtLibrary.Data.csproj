@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-nmtLibrary-D8D6D388-90F6-4E1E-84C5-46BB14EAFEAA</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.2.0" />
