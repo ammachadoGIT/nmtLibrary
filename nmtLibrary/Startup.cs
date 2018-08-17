@@ -12,6 +12,7 @@ using nmtLibrary.Data;
 using nmtLibrary.Models;
 using nmtLibrary.General.Interfaces;
 using nmtLibrary.Data.Repository;
+using nmtLibrary.Services;
 
 namespace nmtLibrary
 {
@@ -40,6 +41,7 @@ namespace nmtLibrary
             // Add application services.
             services.AddTransient<IWriterRepository, WriterRepository>();
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IWriterService, WriterService>();
 
             services.AddMvc();
         }
