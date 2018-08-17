@@ -19,28 +19,22 @@ function getBooks(event, id) {
 
 function displayBooks(data) {
     var tbody = document.querySelector('#table-books')
-    tbody.innerHTML = ''
-
-    data.forEach(item => {
-        tbody.innerHTML +=
-            `<tr>
-                <td>${item.title}</td>
-                <td>${item.year}</td>
-            </tr>`
-    })
+    tbody.innerHTML = data.map(item =>
+        `<tr>
+            <td>${item.title}</td>
+            <td>${item.year}</td>
+        </tr>`
+    ).join('')
 }
 
 function displayWriters(data) {
     var tbody = document.querySelector('#table-writers')
-    tbody.innerHTML = ''
-
-    data.forEach(item => {
-        tbody.innerHTML +=
-            `<tr onclick="getBooks(event, ${item.id})">
-                <td>${item.name}</td>
-                <td>${formatDate(item.dateOfBirth)}</td>
-            </tr>`
-    })
+    tbody.innerHTML = data.map(item =>
+        `<tr onclick="getBooks(event, ${item.id})">
+            <td>${item.name}</td>
+            <td>${formatDate(item.dateOfBirth)}</td>
+        </tr>`
+    ).join('')
 }
 
 function formatDate(d) {
@@ -52,5 +46,3 @@ function selectLine(node) {
     lines.forEach(line => line.className = '')
     node.className = "bg-primary"
 }
-
-
