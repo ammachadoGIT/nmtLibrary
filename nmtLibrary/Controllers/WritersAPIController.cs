@@ -9,27 +9,25 @@ namespace nmtLibrary.Controllers
     [Route("api/Writers")]
     public class WritersAPIController : Controller
     {
-        private readonly IWriterRepository writerRepository;
-        private readonly IBookRepository bookRepository;
+        private readonly IWriterService writerService;
 
-        public WritersAPIController(IWriterRepository writerRepository, IBookRepository bookRepository)
+        public WritersAPIController(IWriterService writerService)
         {
-            this.writerRepository = writerRepository;
-            this.bookRepository = bookRepository;
+            this.writerService = writerService;
         }
 
         // GET: api/Writers
         [HttpGet]
         public IEnumerable<Writer> Writers()
         {
-            return writerRepository.ListAll();
+            return writerService.ListAll();
         }
 
         // GET: api/Writers/5/Books
         [HttpGet("{id}/Books")]
         public IEnumerable<Book> BooksByWriter([FromRoute] int id)
         {
-            return bookRepository.ListBooksByWriter(id);
+            return writerService.ListBooksByWriter(id);
         }
     }
 }
