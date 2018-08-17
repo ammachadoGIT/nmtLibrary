@@ -11,16 +11,17 @@ using System;
 namespace nmtLibrary.Migrations.Library
 {
     [DbContext(typeof(LibraryContext))]
-    partial class LibraryContextModelSnapshot : ModelSnapshot
+    [Migration("20180713011446_LibraryInitial")]
+    partial class LibraryInitial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.0.3-rtm-10026")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("nmtLibrary.General.Models.Book", b =>
+            modelBuilder.Entity("nmtLibrary.Domain.Models.Book", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -40,7 +41,7 @@ namespace nmtLibrary.Migrations.Library
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("nmtLibrary.General.Models.Writer", b =>
+            modelBuilder.Entity("nmtLibrary.Domain.Models.Writer", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
@@ -56,9 +57,9 @@ namespace nmtLibrary.Migrations.Library
                     b.ToTable("Writers");
                 });
 
-            modelBuilder.Entity("nmtLibrary.General.Models.Book", b =>
+            modelBuilder.Entity("nmtLibrary.Domain.Models.Book", b =>
                 {
-                    b.HasOne("nmtLibrary.General.Models.Writer", "Writer")
+                    b.HasOne("nmtLibrary.Domain.Models.Writer", "Writer")
                         .WithMany()
                         .HasForeignKey("WriterID")
                         .OnDelete(DeleteBehavior.Cascade);

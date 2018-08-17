@@ -1,7 +1,7 @@
-﻿using nmtLibrary.General.Models;
+﻿using nmtLibrary.Domain.Models;
 using System.Collections.Generic;
 
-namespace nmtLibrary.General.Interfaces
+namespace nmtLibrary.Domain.Interfaces
 {
     public interface IBookRepository
     {

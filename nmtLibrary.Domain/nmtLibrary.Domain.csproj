@@ -7,8 +7,8 @@
     <ProjectGuid>{24984F53-2703-4A4F-8957-BC8D16C8A3E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>nmtLibrary.General</RootNamespace>
-    <AssemblyName>nmtLibrary.General</AssemblyName>
+    <RootNamespace>nmtLibrary.Domain</RootNamespace>
+    <AssemblyName>nmtLibrary.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

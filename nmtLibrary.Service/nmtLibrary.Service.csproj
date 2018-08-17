@@ -44,9 +44,9 @@
     <Compile Include="Services\WriterService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\nmtLibrary.General\nmtLibrary.General.csproj">
+    <ProjectReference Include="..\nmtLibrary.Domain\nmtLibrary.Domain.csproj">
       <Project>{24984f53-2703-4a4f-8957-bc8d16c8a3e2}</Project>
-      <Name>nmtLibrary.General</Name>
+      <Name>nmtLibrary.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
