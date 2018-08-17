@@ -6,5 +6,6 @@ namespace nmtLibrary.General.Interfaces
     public interface IWriterService
     {
         IEnumerable<Writer> ListAll();
+        IEnumerable<Book> ListBooksByWriter(int id);
     }
 }
