@@ -1,5 +1,5 @@
-﻿using nmtLibrary.General.Models;
-using nmtLibrary.General.Interfaces;
+﻿using nmtLibrary.Domain.Models;
+using nmtLibrary.Domain.Interfaces;
 using System.Collections.Generic;
 
 namespace nmtLibrary.Services

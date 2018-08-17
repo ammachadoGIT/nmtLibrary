@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using nmtLibrary.General.Models;
-using nmtLibrary.General.Interfaces;
+using nmtLibrary.Domain.Models;
+using nmtLibrary.Domain.Interfaces;
 
 namespace nmtLibrary.Controllers
 {

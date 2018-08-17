@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
@@ -8,7 +12,6 @@ using nmtLibrary.Data;
 using nmtLibrary.Models;
 using nmtLibrary.Domain.Interfaces;
 using nmtLibrary.Data.Repository;
-using nmtLibrary.Services;
 
 namespace nmtLibrary
 {
@@ -37,7 +40,6 @@ namespace nmtLibrary
             // Add application services.
             services.AddTransient<IWriterRepository, WriterRepository>();
             services.AddTransient<IBookRepository, BookRepository>();
-            services.AddTransient<IWriterService, WriterService>();
 
             services.AddMvc();
         }

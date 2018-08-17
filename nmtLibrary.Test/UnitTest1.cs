@@ -1,5 +1,5 @@
-using nmtLibrary.General.Interfaces;
-using nmtLibrary.General.Models;
+using nmtLibrary.Domain.Interfaces;
+using nmtLibrary.Domain.Models;
 using nmtLibrary.Services;
 using NSubstitute;
 using System;
