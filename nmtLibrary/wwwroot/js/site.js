@@ -1,20 +1,11 @@
-﻿$(function () {
-    getWriters()
-})
-
-function getWriters() {
-    fetch("/api/Writers/")
-        .then(data => data.json())
-        .then(data => displayWriters(data))
+﻿function formatDate(d) {
+    return d.substring(0, 10)
 }
 
-function getBooks(event, id) {
-    selectLine(event.target.parentNode)
-
-    var apiEndpoint = "/api/Writers/" + id + "/Books"
-    fetch(apiEndpoint)
-        .then(data => data.json())
-        .then(data => displayBooks(data))
+function selectLine(node) {
+    var lines = document.querySelectorAll("#table-writers tr")
+    lines.forEach(line => line.className = '')
+    node.className = "bg-primary"
 }
 
 function displayBooks(data) {
@@ -37,12 +28,21 @@ function displayWriters(data) {
     ).join('')
 }
 
-function formatDate(d) {
-    return d.substring(0, 10)
+function getWriters() {
+    fetch("/api/Writers/")
+        .then(data => data.json())
+        .then(data => displayWriters(data))
 }
 
-function selectLine(node) {
-    var lines = document.querySelectorAll("#table-writers tr")
-    lines.forEach(line => line.className = '')
-    node.className = "bg-primary"
+function getBooks(event, id) {
+    selectLine(event.target.parentNode)
+
+    var apiEndpoint = "/api/Writers/" + id + "/Books"
+    fetch(apiEndpoint)
+        .then(data => data.json())
+        .then(data => displayBooks(data))
 }
+
+$(function () {
+    getWriters()
+})
