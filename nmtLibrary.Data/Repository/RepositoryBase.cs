@@ -14,7 +14,7 @@ namespace nmtLibrary.Data.Repository
             }
         }
 
-        public RepositoryBase(LibraryContext libraryContext)
+        protected RepositoryBase(LibraryContext libraryContext)
         {
             LibraryContext = libraryContext;
         }
