@@ -6,8 +6,8 @@ namespace nmtLibrary.Services
 {
     public class WriterService : IWriterService, IWriterRepository, IBookRepository
     {
-        private IWriterRepository writerRepository;
-        private IBookRepository bookRepository;
+        private readonly IWriterRepository writerRepository;
+        private readonly IBookRepository bookRepository;
 
         public WriterService(IWriterRepository writerRepository, IBookRepository bookRepository)
         {
