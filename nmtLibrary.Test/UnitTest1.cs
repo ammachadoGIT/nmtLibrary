@@ -13,7 +13,7 @@ namespace nmtLibrary.Test
     {
         private readonly IBookRepository bookRepository;
         private readonly IWriterRepository writerRepository;
-        private WriterService writerService;
+        private readonly WriterService writerService;
 
         public UnitTest1()
         {
