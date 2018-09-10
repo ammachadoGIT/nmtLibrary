@@ -1,8 +1,6 @@
-﻿using nmtLibrary.Data;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
+﻿using System.Linq;
 
-namespace nmtLibrary.Repository
+namespace nmtLibrary.Data.Repository
 {
     public abstract class RepositoryBase<T> where T : class
     {
