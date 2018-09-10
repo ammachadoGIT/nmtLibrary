@@ -2,7 +2,6 @@
 using System.Linq;
 using nmtLibrary.Domain.Interfaces;
 using nmtLibrary.Domain.Models;
-using nmtLibrary.Repository;
 
 namespace nmtLibrary.Data.Repository
 {
