@@ -8,5 +8,3 @@ App features:
 - One login
 - One secured page (not accessible for unauthenticated users)
 - .Net core, asp.net identity for security
-
-See it online: http://nmtlibrary20180712113614.azurewebsites.net/
